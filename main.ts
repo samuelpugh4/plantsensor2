@@ -3,7 +3,6 @@ input.onButtonPressed(Button.A, function () {
     if (gatorEnvironment.getMeasurement(measurementType.eCO2) >= 50) {
         basic.showIcon(IconNames.Happy)
     } else {
-        soundExpression.sad.playUntilDone()
         basic.showIcon(IconNames.Sad)
     }
 })
